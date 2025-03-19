@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/codeflix-bots/autofilter",
-    "repository": "/codeflix-bots/autofilter",
+    "website": "https://github.com/Guardianff/Codex-Zia",
+    "repository": "/Guardianff/Codex-Zia",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
