@@ -33,7 +33,7 @@ NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/0593a3103ba1b9a5855bf.
 MELCOW_VID = environ.get("MELCOW_VID", "")
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/a96c590ca726b2dbb9d96.jpg")
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', ''))
-FSUB_PICS = (environ.get('FSUB_PICS', '')).split()  # Fsub pic
+FSUB_PICS = (environ.get('FSUB_PICS', 'https://envs.sh/nwn.jpg')).split()  # Fsub pic
 
 # ============================
 # Admin, Channels & Users Configuration
