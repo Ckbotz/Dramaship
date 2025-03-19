@@ -32,7 +32,7 @@ PICS = (environ.get('PICS', 'https://graph.org/file/cd932e8292208cf23526d.jpg ht
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/0593a3103ba1b9a5855bf.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "")
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/a96c590ca726b2dbb9d96.jpg")
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', ''))
+SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://envs.sh/nwn.jpg'))
 FSUB_PICS = (environ.get('FSUB_PICS', 'https://envs.sh/nwn.jpg')).split()  # Fsub pic
 
 # ============================
@@ -44,12 +44,12 @@ LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))  # Log channel id (make sure b
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1001583883335'))  # Bin channel id (make sure bot is admin)
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1001583883335'))  # Notification of those who verify will be sent to your channel
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1001583883335'))  # Premium logs channel id
-auth_channel = environ.get('AUTH_CHANNEL', '-1002451034116')  # Channel/Group ID for force sub (make sure bot is admin)
+auth_channel = environ.get('AUTH_CHANNEL', '')  # Channel/Group ID for force sub (make sure bot is admin)
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '').split()]
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001940661697')  # Support group id (make sure bot is admin)
 reqst_channel = environ.get('REQST_CHANNEL_ID', '')  # Request channel id (make sure bot is admin)
-AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '').split()]
-MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
+AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1002451034116').split()]
+MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1002451034116').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
 
 
 # ============================
